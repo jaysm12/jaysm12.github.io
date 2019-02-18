@@ -1,0 +1,115 @@
+body{
+    background-image: url(file:///C:/Coding/Background/zoltan-kovacs-285132-unsplash.jpg);
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.text{
+    font-family: 'Courier';
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(77, 75, 75);
+    padding: 10px 25px;
+    background-color: rgb(220, 220, 220, 0.5);
+    border: 2px solid rgba(77, 75, 75, 0.555);
+}
+
+.tombol{
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+#random{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    background-color: rgb(77, 75, 75);
+    text-align: center;
+    cursor: pointer;
+}
+
+#list{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    background-color: rgb(77, 75, 75);
+    text-align: center;
+    cursor: pointer;
+}
+
+#reset{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    background-color: rgb(77, 75, 75);
+    text-align: center;
+    cursor: pointer;
+}
+
+#anagram{
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#random:hover {
+    background-color: rgba(165, 159, 159, 0.226);
+    color: rgb(77, 75, 75);
+}
+
+#list:hover {
+    background-color: rgba(165, 159, 159, 0.226);
+    color: rgb(77, 75, 75);
+}
+
+#reset:hover {
+    background-color: rgba(165, 159, 159, 0.226);
+    color: rgb(77, 75, 75);
+}
+
+.hasilAnagram{
+    color: rgb(65, 65, 65);
+    background-color: rgba(231, 231, 231, 0.603);
+    transform: translate(0px,550px);
+    left: 50%;
+    top: 50%;
+}
+
+input[type=text] {
+    border: 2px solid rgb(77, 75, 75);
+    border-radius: 4px;
+    background-color: rgb(233, 223, 223);
+  }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(73, 71, 71);
+    color: rgb(194, 186, 186);
+    text-align: left;
+    padding-left: 30px;
+ }
+
+ ul {
+    list-style-type: none;
+ }
