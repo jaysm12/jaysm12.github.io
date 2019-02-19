@@ -1,22 +1,21 @@
+function getAnagram(word, anagram = '', hasilAnagram = []){
   
-    var hasilAnagram = []
-    
-    function getAnagram(word, anagram = ''){
-  
-      if(word.length == 0){
-        hasilAnagram.push(anagram);
-        return;
-      }
-      for(var i = 0; i < word.length; i++){
-        anagram += word[i];
-        getAnagram(word.slice(0, i) + word.slice(i + 1), anagram,);
-        anagram = anagram.slice(0, anagram.length - 1);
-      }
-    
-    
-      
-    }
+  if(word.length == 0){
+    hasilAnagram.push(anagram);
+    return;
+  }
+  for(var i = 0; i < word.length; i++){
+    anagram += word[i];
+    getAnagram(word.slice(0, i) + word.slice(i + 1), anagram, hasilAnagram);
+    anagram = anagram.slice(0, anagram.length - 1);
+  }
+  // var random = [...new Set(hasilAnagram)]
+  // return random[Math.floor(Math.random() * random.length)]
 
+  return [...new Set(hasilAnagram)]
+
+  
+}
  
 
 // //DOM
@@ -35,9 +34,10 @@ merandomkan.addEventListener("click", function(){
   // var hasilAnagram = []
   divHasil[0].innerHTML = ''
   var text = document.getElementById("anagram")
-  getAnagram(text.value)
+  var anagramRandom = getAnagram(text.value)
+  console.log(getAnagram(text.value))
   var hasil = document.createElement('h3')
-  var hasilRandom = hasilAnagram[Math.floor(Math.random() * hasilAnagram.length)]
+  var hasilRandom = anagramRandom[Math.floor(Math.random() * anagramRandom.length)]
   var hasilAnagramRandom = document.createTextNode(hasilRandom)
   hasil.setAttribute("id", "anagramRandom")
   hasil.appendChild(hasilAnagramRandom)
@@ -51,14 +51,14 @@ merandomkan.addEventListener("click", function(){
 
 melistkan.addEventListener("click", function(){
   // var hasilAnagram = []
+  divHasil[0].innerHTML = ''
   var text = document.getElementById("anagram")
-  getAnagram(text.value)
+  var anagramList = getAnagram(text.value)
   var ul = document.createElement("ul")
   ul.setAttribute("id", "anagramList")
-  console.log('hasil anagram', hasilAnagram)
-  for(var i = 0; i < hasilAnagram.length; i++){
+  for(var i = 0; i < anagramList.length; i++){
     var li = document.createElement("li")
-    var isiLi = document.createTextNode(hasilAnagram[i])
+    var isiLi = document.createTextNode(anagramList[i])
     li.appendChild(isiLi)
     ul.appendChild(li)
   }
@@ -72,15 +72,11 @@ melistkan.addEventListener("click", function(){
 mereset.addEventListener("click", function(){
   var text = document.getElementById("anagram")
   divHasil[0].innerHTML = ''
-  text.value = ''
   divHasil[0].style.padding = '0';
-  location.reload()
+  // location.reload()
 })
 
-getAnagram('abcd');
-getAnagram('efgh')
-console.log(hasilAnagram)
-  
+console.log(getAnagram('afe'))
 
 
 
