@@ -60,6 +60,7 @@ melistkan.addEventListener("click", function(){
     var li = document.createElement("li")
     var isiLi = document.createTextNode(anagramList[i])
     li.appendChild(isiLi)
+    li.style.padding = '15px';
     ul.appendChild(li)
   }
   divHasil[0].style.padding = '30px 40px';
@@ -75,8 +76,6 @@ mereset.addEventListener("click", function(){
   divHasil[0].style.padding = '0';
   // location.reload()
 })
-
-console.log(getAnagram('afe'))
 
 
 
