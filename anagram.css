@@ -114,3 +114,16 @@ input[type=text] {
  ul {
     list-style-type: none;
  }
+
+.linkHacktiv {
+     color: rgb(194, 186, 186);
+     position: fixed;
+     right: 30px;
+     bottom: 12px;
+     /* padding-top: 10px; */
+     /* padding: 10px; */
+ }
+
+ .linkHacktiv:hover {
+     color: white;
+ }
