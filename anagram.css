@@ -119,11 +119,18 @@ input[type=text] {
      color: rgb(194, 186, 186);
      position: fixed;
      right: 30px;
-     bottom: 12px;
-     /* padding-top: 10px; */
-     /* padding: 10px; */
+     bottom: 15px;
  }
 
- .linkHacktiv:hover {
-     color: white;
+ .logo {
+     position: relative;
+     top: 10px;
+     width: 40px;
+     opacity: 0.5;
+     bottom: 12px;
+
+ }
+
+ .logo:hover {
+    opacity: 1.0;
  }

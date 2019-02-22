@@ -9,14 +9,10 @@ function getAnagram(word, anagram = '', hasilAnagram = []){
     getAnagram(word.slice(0, i) + word.slice(i + 1), anagram, hasilAnagram);
     anagram = anagram.slice(0, anagram.length - 1);
   }
-  // var random = [...new Set(hasilAnagram)]
-  // return random[Math.floor(Math.random() * random.length)]
-
-  return [...new Set(hasilAnagram)]
+  return hasilAnagram
 
   
 }
- 
 
 // //DOM
       
@@ -24,18 +20,12 @@ var merandomkan = document.getElementById("random")
 var melistkan = document.getElementById("list")
 var body = document.getElementsByTagName("body")
 var mereset = document.getElementById("reset")
-// var divHasil = document.createElement("div")
-// divHasil.setAttribute("class", "hasilAnagram")
-// body[0].appendChild(divHasil)
-// console.log('merandomkan', merandomkan)
 var divHasil = document.getElementsByClassName("hasilAnagram")
 
 merandomkan.addEventListener("click", function(){
-  // var hasilAnagram = []
   divHasil[0].innerHTML = ''
   var text = document.getElementById("anagram")
   var anagramRandom = getAnagram(text.value)
-  console.log(getAnagram(text.value))
   var hasil = document.createElement('h3')
   var hasilRandom = anagramRandom[Math.floor(Math.random() * anagramRandom.length)]
   var hasilAnagramRandom = document.createTextNode(hasilRandom)
@@ -50,7 +40,6 @@ merandomkan.addEventListener("click", function(){
 })
 
 melistkan.addEventListener("click", function(){
-  // var hasilAnagram = []
   divHasil[0].innerHTML = ''
   var text = document.getElementById("anagram")
   var anagramList = getAnagram(text.value)
@@ -74,7 +63,6 @@ mereset.addEventListener("click", function(){
   var text = document.getElementById("anagram")
   divHasil[0].innerHTML = ''
   divHasil[0].style.padding = '0';
-  // location.reload()
 })
 
 
