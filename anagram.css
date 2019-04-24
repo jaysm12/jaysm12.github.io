@@ -12,7 +12,7 @@ body{
     text-align: center;
     min-width: 800px;
     max-width: 100px;
-    margin: auto;
+    margin: 20px auto;
     color: rgb(77, 75, 75);
     padding: 10px 25px;
     background-color: rgb(220, 220, 220, 0.5);
@@ -20,8 +20,7 @@ body{
 }
 
 .tombol{
-    margin: auto;
-    /* border: 5px solid black; */
+    margin: 120px auto auto; 
     text-align: center;
     padding: 10px;
 }
@@ -67,6 +66,8 @@ body{
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 220px;
+    padding: 3px 4px;
 }
 
 #random:hover {
@@ -87,11 +88,9 @@ body{
 .hasilAnagram{
     font-family:'Montserrat', sans-serif;
     color: rgb(65, 65, 65);
-    position: relative;
+    /* position: relative; */
     background-color: rgba(231, 231, 231, 0.603);
-    /* transform: translate(0px,550px); */
-    /* left: 50%; */
-    top: 70%;
+    margin: 10px auto;
 }
 
 input[type=text] {
