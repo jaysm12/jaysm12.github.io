@@ -5,14 +5,14 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0
 }
 .text{
     font-family:'Courier New', Courier, monospace;
     text-align: center;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    min-width: 800px;
+    max-width: 100px;
+    margin: auto;
     color: rgb(77, 75, 75);
     padding: 10px 25px;
     background-color: rgb(220, 220, 220, 0.5);
@@ -20,12 +20,10 @@ body{
 }
 
 .tombol{
+    margin: auto;
+    /* border: 5px solid black; */
     text-align: center;
-    position: relative;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
+    padding: 10px;
 }
 
 
@@ -136,68 +134,3 @@ input[type=text] {
  .logo:hover {
     opacity: 1.0;
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

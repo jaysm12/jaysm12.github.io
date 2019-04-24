@@ -1,5 +1,4 @@
 function getAnagram(word, anagram = '', hasilAnagram = []){
-  
   if(word.length == 0){
     hasilAnagram.push(anagram);
     return;
@@ -10,11 +9,9 @@ function getAnagram(word, anagram = '', hasilAnagram = []){
     anagram = anagram.slice(0, anagram.length - 1);
   }
   return hasilAnagram
-
-  
 }
 
-// //DOM
+// |||||||||||||||||||||||||||||||||||||||||||>>>>DOM<<<<<<|||||||||||||||||||||||||||||||||| //
       
 var merandomkan = document.getElementById("random")
 var melistkan = document.getElementById("list")
@@ -64,8 +61,3 @@ mereset.addEventListener("click", function(){
   divHasil[0].innerHTML = ''
   divHasil[0].style.padding = '0';
 })
-
-
-
-
-
