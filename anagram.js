@@ -28,6 +28,9 @@ merandomkan.addEventListener("click", function(){
   var hasilAnagramRandom = document.createTextNode(hasilRandom)
   hasil.setAttribute("id", "anagramRandom")
   hasil.appendChild(hasilAnagramRandom)
+  // divHasil[0].style.border = "3px solid rgb(77, 75, 75)"
+  divHasil[0].style.borderTop = "3px solid rgb(77, 75, 75)"
+  divHasil[0].style.borderBottom = "3px solid rgb(77, 75, 75)"
   divHasil[0].style.padding = '2px 10px';
   divHasil[0].style.textAlign = 'center';
   divHasil[0].style.fontSize = '40px';
@@ -49,6 +52,8 @@ melistkan.addEventListener("click", function(){
     li.style.padding = '15px';
     ul.appendChild(li)
   }
+  divHasil[0].style.border = ''
+  divHasil[0].style.borderTop = "2px solid rgb(77, 75, 75)"
   divHasil[0].style.padding = '10px 40px';
   divHasil[0].style.textAlign = 'center';
   divHasil[0].style.fontSize = '40px';
@@ -60,4 +65,5 @@ mereset.addEventListener("click", function(){
   var text = document.getElementById("anagram")
   divHasil[0].innerHTML = ''
   divHasil[0].style.padding = '0';
+  divHasil[0].style.border = ''
 })
